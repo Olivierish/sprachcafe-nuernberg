@@ -1,0 +1,188 @@
+/* Lora & Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;1,400;1,500&family=Poppins:ital,wght@0,400;0,600;0,700;0,800;0,900;1,600;1,700;1,900&display=swap');
+
+/* OpenSans & PT Sans */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,600;0,700;0,800;1,600;1,700;1,800&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+/* Yeseva One & Josefin Sans*/
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,200;0,300;0,400;1,200;1,300;1,400&family=Yeseva+One&display=swap');
+
+:root{
+    /* Allgemein Styleguide Vorgaben sammeln */
+    --color1:#272727;
+    --color2:#fff;
+    --color3:orange;
+    --color4:#ff0066;
+    --color5:rgb(3,187,147);
+
+    /*Fonts*/
+    
+    --font1-1: 'Open Sans', sans-serif;
+    --font1-2: 'PT Sans', sans-serif;
+
+    --font2-1: 'Lora', serif;
+    --font2-2: 'Poppins', sans-serif;
+
+    --font3-1: 'Yeseva One', cursive;
+    --font3-2: 'Josefin Sans', sans-serif;
+
+    --font-test: 'Paylist Caps', arial;
+
+    /* 
+    --page-font-text:var(--font1-2);
+    --page-font-title:var(--font1-1); */
+
+    --page-font-text:var(--font3-2);
+    --page-font-title:var(--font3-1);
+
+    /* 
+    --page-font-text:var(--font3-2);
+    --page-font-title:var(--font-test); */
+
+    --page-bg: var(--color2);
+    --page-text: var(var(--color1));
+    --page-text-size: 120%;
+    --page-line: 1.4;
+
+    /*Titles*/
+    --heading-font: var(--page-font-title,serif);
+    --heading-color: var(--color3);
+
+    /* Links und Formulare*/
+    /* anker*/
+    --link-decoration:underline;
+    --link-color:inherit;
+    --link-bg:none;
+
+    --link-hov-decoration:none;
+    --link-hov-color:inherit;
+    --link-hov-bg:none;
+
+    /*Images*/
+    --img-bg-color:var(--color4);
+}
+
+html{
+  background: var(--page-bg);
+  font-family: var(--page-font-text);
+  color: var(--color1, initial);
+  font-size: var(--page-text-size, 100.01%);
+  line-height:var(--page-line, auto);
+}
+
+body{
+  margin:0;
+}
+
+/* Inhalte */
+h1,h2,h3{
+  font-family:var(--heading-font, inherit);
+  color: var(--heading-color);
+}
+
+h1{
+/* font-family:;
+  color:;
+  margin-top:;
+  margin-bottom:; */
+}
+/* h2{
+  font-family:;
+  color:;
+  margin-top:;
+  margin-bottom:;
+}
+h3{  
+  font-family:;
+  color:;
+  margin-top:;
+  margin-bottom:;
+} */
+
+/* interaktive Elemente */
+a{
+  text-decoration: var(--link-decoration);
+  color:var(--link-color);
+  background-color: var(--link-bg);
+  display:inline-block;
+}
+a:hover,
+a:focus{
+    text-decoration: var(--link-hov-decoration);
+    color: var(--link-hov-color);
+    background: var(--link-hov-bg);
+}
+
+.btn{display:inline-block;}
+.btn:hover,.btn:focus{}
+
+input,textarea,select{}
+input:hover,textarea:hover,select:hover{}
+input:focus,textarea:focus,select:focus{}
+
+img{
+  display:inline-block;
+  background: var(--img-bg-color);
+}
+
+/* Hintergrundfarbe entfernen wenn transparentes grafikformat genutzt wird */
+img[src$=".png"],img[src$=".gif"]{
+    background:none;
+}
+
+/* Mindestgröße für verlinkte Bilder auf Touchscreens */
+a img{
+    min-width:44px;
+    min-height:44px;
+}
+
+
+/**
+/* Standardregelsätze */
+/***************************   
+/*   
+/* 
+Die hier angegeben Regelsätze ermöglichen es die wichtigsten Vorgaben aus einem Stylguide zu übernehmen und müssen mit jedem Projekt nur angepasst werden
+Layout spezifische Angaben (das spätere Design) wird in einem weiteren Stylesheet aufgebaut. 
+Ein späteres zusammenfassen der CSS-Dateien oder generelles einzelnes einbinden von mehreren CSS-Dateien ist jederzeit möglich.
+
+Das Zusammenführen von mehreren CSS-Dateien via:
+ @import url("dateiname.css");
+ @import url("dateiname-2.css");
+ usw. ist aus Performancegründen zu vermeiden.
+
+ Führen Sie bei kleineren Stylesheets (gesamt bis ca. 1500 Zeilen) alle Anweisungen in einer Datei zusammen. Bei größen Styleysheets rufen sie einfach alle benötigten Dateien im Kopf auf.
+/*  
+/*
+/**/
+
+/**
+/* Standard rule sets */
+/***************************   
+/*   
+/* 
+The rulesets given here allow to take the most important specifications from a style guide and only need to be adjusted with each project
+Layout specific specifications (the later design) will be built up in another stylesheet. 
+A later merging of the CSS files or general single integration of several CSS files is possible at any time.
+
+The merging of several CSS files via:
+ @import url("filename.css");
+ @import url("filename-2.css");
+ etc. should be avoided for performance reasons.
+
+ For smaller stylesheets (total up to about 1500 lines), merge all statements into one file. For larger stylesheets, simply call all required files in the header.
+/*  
+/*
+/**/
+
+
+/** Resetten*/ 
+/* 
+*{margin:0;padding:0;} 
+*/
+
+/**
+* Alternativen zum hardereset
+* http://meyerweb.com/eric/tools/css/reset/ - resetstylesheet 
+* http://necolas.github.io/normalize.css/ - normalisieren
+*/ 

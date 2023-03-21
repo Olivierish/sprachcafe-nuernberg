@@ -1,0 +1,39 @@
+/* TODO: Test  */
+.out0{
+    outline: 1px solid gray;
+}
+.out1{
+    outline: 1px solid tomato;
+}
+.out2{
+    outline: 1px solid teal;
+}
+.out3{
+    outline: 1px solid green;
+}
+.out5{
+    outline: 1px solid yellow;
+}
+.out6{
+    outline: 1px solid yellow;
+}
+.out7{
+    outline: 1px solid yellow;
+}
+.out8{
+    outline: 1px solid yellow;
+}
+
+
+header img{
+    width: 150px;
+    height: 150px;
+}
+
+#hero ul{
+    list-style-type: none;
+}
+#hero ul img{
+    width: 50px;
+    height: auto;
+}

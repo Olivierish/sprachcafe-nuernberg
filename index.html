@@ -5,36 +5,87 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>☕Sprachcafé Nürnberg</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/raster.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div id="wrapper">
-        <header>
+    <div class="wrap out0">
+        <header class="flex col-100 pad-l pad-r">
             <div id="logo">
-                <img src="media/logo2.png" width="100" height="100" alt="Sprachcafé logo">
+                <img src="media/logo2.png" alt="Sprachcafé logo">
             </div>
             
             <nav>
-                http://html5doctor.com/nav-element/
-                <ul>
-                    <li><a href="/index.html" class="active">Home</a></li>
-                    <li><a href="/pages/about.html">About</a></li>
-                    <li><a href="/pages/events.html">Events</a></li>
-                    <li><a href="/pages/activities.html">Activities</a></li>
-                    <li><a href="/pages/members_notes.html">Members Notes</a></li>
-                    <li><a href="/pages/contact.html">Contact</a></li>
+                <ul class="flex">
+                    <!-- FIXME: AVANT D'ENVOYER Remettre "/pages/" au lieu de "pages/"-->
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="pages/about.html">About</a></li>
+                    <li><a href="pages/events.html">Events</a></li>
+                    <li><a href="pages/activities.html">Activities</a></li>
+                    <li><a href="pages/members_notes.html">Members Notes</a></li>
+                    <li><a href="pages/contact.html">Contact</a></li>
                 </ul>
             </nav>
         </header>
-        <div id="container">
+        <div id="container">  
+            <article id="hero" class="out1">
+                <div class="heroIntro out2">
+                    <img src="media/globe1.png" alt="Image">
+                    <div class="heroIntroContent out3">
+                        <h1>Welcome to Sprachcafé Nürnberg</h1>
+                        <p>Do you want to speak langauges? Speaking and learning different languages, meeting people from all over the world, having fun!</p>
+                    </div>
+                </div>
+                <div class="heroLanguages">
+                    <ul class="flex">
+                        <li><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Flag_of_France_%28lighter_variant%29.svg/1280px-Flag_of_France_%28lighter_variant%29.svg.png" alt="">
+                        <p>German</p>
+                        </li>
+                        <li><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Flag_of_France_%28lighter_variant%29.svg/1280px-Flag_of_France_%28lighter_variant%29.svg.png" alt="">
+                        <p>English</p>
+                        </li>
+                        <li><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Flag_of_France_%28lighter_variant%29.svg/1280px-Flag_of_France_%28lighter_variant%29.svg.png" alt="">
+                        <p>French</p>
+                        </li>
+                        <li><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Flag_of_France_%28lighter_variant%29.svg/1280px-Flag_of_France_%28lighter_variant%29.svg.png" alt="">
+                        <p>Spanish</p>
+                        </li>
+                        <li><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Flag_of_France_%28lighter_variant%29.svg/1280px-Flag_of_France_%28lighter_variant%29.svg.png" alt="">
+                        <p>Italian</p>
+                        </li>
+                    </ul>
+                </div>
+                
+            </article>
+
+            <section>
+                <h2>How it works</h2>
+                <p>
+                    People will join the group of the language of their interest. of course you can move from one group to another during the event as you wish. 
+                </p>
+                <p>
+                    All levels are welcomed in groups, some materials will be provided to help the beginners and also in order to have inclusive conversations(your Ideas are welcomed).
+                </p>
+                <p>
+                    Depending on the demand, other languages will be included in the future.
+                    We're looking forward to meeting you ! 🤗
+                </p>
+            </section>
 
         </div>
         <footer>
-            <div class="socials">
-
+            <div class="socials flex out5">
+                <div class="insta">Meetups</div>
+                <div class="insta">Instagram</div>
+                <div class="insta">Whatsapp</div>
             </div>
-            <div id="copyright">
-                &copy; Olivieris 
+
+            <div class="copyright-impressum flex">
+                <div class="copyright">&copy; Olivieris </div>
+                <div class="impressum">
+                    <a href="pages/impressum.html">Impressum</a></div>
             </div>
             
             
