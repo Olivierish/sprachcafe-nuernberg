@@ -7,12 +7,20 @@ Schriften im ttf-und otf-Format werden von Firefox seit der Version 3.5, von Saf
 Das woff-Format (Web Open Font Format) setzt sich langsam als Standard durch. Es hat zwei Vorteile gegenüber otf– und ttf-Schriften. Zum einen sind die Dateien komprimiert und zum anderen können sie Metadaten mit Informationen zum Ursprung oder der Lizenz der Schriftart enthalten. Diese Eigenschaften machen es zum bevorzugten Format der Schriftenanbieter. Firefox unterstützt das woff-Format seit Version 3.6. 
 Das svg-Format wird zur Darstellung im iPhone und iPad benötigt. Es kann aber auch von Safari seit der Version 3.1, von Chrome seit der Version 0.3 und von Opera seit der Version 9 angezeigt werden. Dabei handelt es sich nicht um ein webfont–Format im eigentlichen Sinne. Svg-Schriften sind Textdateien, welche die einzelnen Zeichen als einzelne Vectorobjekte beschreiben.  */  
 
-@font-face{ 
-    font-family:'Playlist Caps'; /* Schriftnamen deklarieren*/ 
+@font-face{
+    font-family:'Playlist Caps'; /* Schriftnamen deklarieren*/
     /* src:url('../fonts/PlaylistFF/BellMT.eot');  */
     /*src:local('schriftname') erlaubt den localen Aufruf auch ohne http/(s)-request */
     src:local('Playlist Caps'),
-    url('../fonts/PlaylistFF/Playlist-Caps.otf') format('otf');
+        url('../fonts/PlaylistFF/Playlist Caps.otf') format('opentype');
+    /* font-weight:normal;
+    font-style:normal; 	 */
+}
+@font-face{
+    font-family:'Playlist Script'; /* Schriftnamen deklarieren*/
+    /* src:url('../fonts/PlaylistFF/BellMT.eot');  */
+    src:local('schriftname'), /*erlaubt den localen Aufruf auch ohne http/(s)-request */
+        url('../fonts/PlaylistFF/Playlist Script.otf') format('opentype');
     font-weight:normal;
-    font-style:normal; 	
-    } 
+    font-style:normal;
+}

@@ -102,6 +102,19 @@
     /* --mar-l:0.5em; */
     margin-left:var(--mar-l);
   }
+
+  /* Beispiel individuelle Werte - Padding */
+  .test{
+    --pad-l:1em;
+    --pad-r:2em;
+  }
+    
+      /* Beispiel individuelle Abstandsklasse - margin */
+  .mar-15{
+    --mar-r:15px;
+    --mar-l:15px;
+  } 
+
   /* Abstandsberechnung */
   
   /* Schreibweise kann noch weiter gekürzt werden sofern die Abstandsvariablen in root immer auf 0 gesetzt bleiben*/
@@ -178,9 +191,11 @@
   /* Flexbox */
   /*###################################################*/
   /* justify, align*/
+
   .flex,.flex-w{display:flex;}
   /* Umbruch bei Flexbox erlauben */
   .flex-w,.flex-wrap{flex-wrap:wrap;}
+  .flex-nw,.flex-nowrap{flex-wrap:nowrap;}
   /* <div class="flex flex-wrap">
     ..
     ..
@@ -194,7 +209,19 @@
     ..
   </div>
   */
-  
+  /*flex-klasse*/
+  .justify-content{
+    justify-content: center;
+  }
+  .justify-content-sb{
+    justify-content: space-around;
+  }
+  .flex-grow,.grow,.f-grow{
+    flex-grow: 1;
+  }
+  .flex-grow-2,.grow-2,.f-grow-2{
+    flex-grow: 2;
+}
   /*###################################################*/
   /* Floats*/
   /*###################################################*/
@@ -213,8 +240,33 @@
     width:100%;
     height:auto;
   }
-  /* Schmalste darstellung für spalten */
-  @media screen and (max-width:30em){
   
+  /* Schmalste darstellung für spalten */
+
+/* Mindestbreite für adaptives Seitenverhalten */
+[class*="col-"]{
+  min-width:160px;
+}
+@media screen and (max-width:60em){
+    /* body{
+        background-color: #ffe1be;
+    } */
+  .col-16{
+    --col:33%;
   }
+
+  .col-25{
+    --col:50%;
+  }
+}
+
+@media screen and (max-width:30em){
+[class*="col-"]{
+  --col:100%;
+  /* background: #fff784; */
+}
+/* .flex{display:block} */
+.flex{flex-direction:column;}
+}
+
   

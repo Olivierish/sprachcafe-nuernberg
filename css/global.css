@@ -7,37 +7,39 @@
 /* Yeseva One & Josefin Sans*/
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,200;0,300;0,400;1,200;1,300;1,400&family=Yeseva+One&display=swap');
 
+
 :root{
     /* Allgemein Styleguide Vorgaben sammeln */
     --color1:#272727;
     --color2:#fff;
-    --color3:orange;
-    --color4:#ff0066;
-    --color5:rgb(3,187,147);
+    --color3:#f1820e;
+    --color4:#464646;
+
 
     /*Fonts*/
-    
     --font1-1: 'Open Sans', sans-serif;
     --font1-2: 'PT Sans', sans-serif;
 
     --font2-1: 'Lora', serif;
     --font2-2: 'Poppins', sans-serif;
 
-    --font3-1: 'Yeseva One', cursive;
+    --font3-1: 'Yeseva One', serif;
     --font3-2: 'Josefin Sans', sans-serif;
 
-    --font-test: 'Paylist Caps', arial;
+    --font4-1: 'Playlist Script', monospace;
+    --font4-2: 'Playlist Caps', monospace;
 
     /* 
     --page-font-text:var(--font1-2);
     --page-font-title:var(--font1-1); */
 
+    /* choosen */
     --page-font-text:var(--font3-2);
     --page-font-title:var(--font3-1);
 
-    /* 
-    --page-font-text:var(--font3-2);
-    --page-font-title:var(--font-test); */
+    /*Logo*/
+    /* --page-font-text:var(--font4-2);
+    --page-font-title:var(--font4-1); */
 
     --page-bg: var(--color2);
     --page-text: var(var(--color1));
