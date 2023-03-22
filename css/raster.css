@@ -1,135 +1,134 @@
 /* spalten */
 
-:root{
-    --wrap:1200px;
-    --pad-l:0px; 
-    --pad-r:0px;
-    --mar-r:0px;
-    --mar-l:0px;
-  }
-  
-  /*###############################################*/
-  /* horizontales zentrieren von Blockelementen*/  
-  .wrap{
-    margin-left: auto;
-    margin-right: auto;
-    max-width:var(--wrap);
-  }
-  
-  /* 
+:root {
+  --wrap: 1200px;
+  --pad-l: 0px;
+  --pad-r: 0px;
+  --mar-r: 0px;
+  --mar-l: 0px;
+}
+
+/*###############################################*/
+/* horizontales zentrieren von Blockelementen*/
+.wrap {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: var(--wrap);
+}
+
+/* 
   1024 - 960px  
     960 / 8  = 120
     960 /10 = 96
     960 / 12 = 80
   */
-  
-  /* Rasteraufbau ohne Abstände*/
-  /*****************************************
+
+/* Rasteraufbau ohne Abstände*/
+/*****************************************
   /* 1/2 , 2/4, 3/6 = 50% 
   /* 1/4 = 25% 
   /* 1/3, 2/6 = 33,3%
   /* 100% = 6/6 
   /**/
-  
-  /* Weitere klassennamen ggf. entsprechend ergänzen */
-  /* Spaltenbreiten vordefinieren*/
-  .col-16{
-    /* width:16.6666667%; */
-    --col:16.6666667%;
-    width:var(--col);
-  }
-  /* .col-33{width:33.3333%;} */
-  .col-33{
-    /* width:33.3333%; */
-    --col:33.3333%;
-    width:var(--col);
-  }
-  
-  .col-50,
-  .col-1_2,
-  .col-3_6{
-    /* width:50%; */
-    --col:50%;
-    width:var(--col);
-  }
-  .col-66{
-    /* width:66.6666667%; */
-    --col:66.6666667%;
-    width:var(--col);
-  }
-  .col-83{
-    /* width:83.3333%; */
-    --col:83.3333%;
-    width:var(--col);
-  }
-  .col-100,
-  .col-6_6{
-    /* width:100%; */
-    --col:100%;
-    width:var(--col);
-  }
-  .col-25{
-    /* width:25%; */
-    --col:25%;
-    width:var(--col);
-  
-  }
-  .col-75{
-    /* width:75%; */
-    --col:75%;
-    width:var(--col);
-  }
-  
-  /* abstandsklassen */
-  /* abstände oben /unten*/
-  /*abstände rechts/links */
-  .pad-l{
-    --pad-l:1em; 
-    padding-left:var(--pad-l);
-  }
-  
-  .pad-r{
-     --pad-r:1em; 
-    padding-right:var(--pad-r);
-  }
-  
-  .mar-r{
-    /* --mar-r:5px;  */
-    margin-right:var(--mar-r);
-  }
-  
-  .mar-l{
-    /* --mar-l:0.5em; */
-    margin-left:var(--mar-l);
-  }
 
-  /* Beispiel individuelle Werte - Padding */
-  .test{
-    --pad-l:1em;
-    --pad-r:2em;
-  }
-    
-      /* Beispiel individuelle Abstandsklasse - margin */
-  .mar-15{
-    --mar-r:15px;
-    --mar-l:15px;
-  } 
+/* Weitere klassennamen ggf. entsprechend ergänzen */
+/* Spaltenbreiten vordefinieren*/
+.col-16 {
+  /* width:16.6666667%; */
+  --col: 16.6666667%;
+  width: var(--col);
+}
+/* .col-33{width:33.3333%;} */
+.col-33 {
+  /* width:33.3333%; */
+  --col: 33.3333%;
+  width: var(--col);
+}
 
-  /* Abstandsberechnung */
-  
-  /* Schreibweise kann noch weiter gekürzt werden sofern die Abstandsvariablen in root immer auf 0 gesetzt bleiben*/
-  /* Abstände selbst sind dann denn abstandsklassen (.mar-l, .mar-r ,.pad-l, .pad-r) und ggf. weiteren mittles Variablen zu zuweisen*/
-  /* Die Breite wurde für diese Beispiel wieder ausgeschrieben um die Lesbarkeit zu verbessern das arbeiten wie zuvor mit der Variable --col ist jedoch empfehlenswerter*/
-  /* Beispiel:
+.col-50,
+.col-1_2,
+.col-3_6 {
+  /* width:50%; */
+  --col: 50%;
+  width: var(--col);
+}
+.col-66 {
+  /* width:66.6666667%; */
+  --col: 66.6666667%;
+  width: var(--col);
+}
+.col-83 {
+  /* width:83.3333%; */
+  --col: 83.3333%;
+  width: var(--col);
+}
+.col-100,
+.col-6_6 {
+  /* width:100%; */
+  --col: 100%;
+  width: var(--col);
+}
+.col-25 {
+  /* width:25%; */
+  --col: 25%;
+  width: var(--col);
+}
+.col-75 {
+  /* width:75%; */
+  --col: 75%;
+  width: var(--col);
+}
+
+/* abstandsklassen */
+/* abstände oben /unten*/
+/*abstände rechts/links */
+.pad-l {
+  --pad-l: 1em;
+  padding-left: var(--pad-l);
+}
+
+.pad-r {
+  --pad-r: 1em;
+  padding-right: var(--pad-r);
+}
+
+.mar-r {
+  /* --mar-r:5px;  */
+  margin-right: var(--mar-r);
+}
+
+.mar-l {
+  /* --mar-l:0.5em; */
+  margin-left: var(--mar-l);
+}
+
+/* Beispiel individuelle Werte - Padding */
+.test {
+  --pad-l: 1em;
+  --pad-r: 2em;
+}
+
+/* Beispiel individuelle Abstandsklasse - margin */
+.mar-15 {
+  --mar-r: 15px;
+  --mar-l: 15px;
+}
+
+/* Abstandsberechnung */
+
+/* Schreibweise kann noch weiter gekürzt werden sofern die Abstandsvariablen in root immer auf 0 gesetzt bleiben*/
+/* Abstände selbst sind dann denn abstandsklassen (.mar-l, .mar-r ,.pad-l, .pad-r) und ggf. weiteren mittles Variablen zu zuweisen*/
+/* Die Breite wurde für diese Beispiel wieder ausgeschrieben um die Lesbarkeit zu verbessern das arbeiten wie zuvor mit der Variable --col ist jedoch empfehlenswerter*/
+/* Beispiel:
   .col-16{
     --col:16.6666667%
     width: calc(var(--col) - var(--mar-l) - var(--mar-r)  - var(--pad-l) - var(--pad-r));
   }
   */
-  /* Fertige Regel in der kürzest-möglichen Schreibweise!*/
-  /* [class*="col-"]{width: calc(var(--col) - var(--mar-l) - var(--mar-r)  - var(--pad-l) - var(--pad-r));}  */
-  /* enspricht nachfolgendem Beispiel Sprechend geschrieben: */
-  /*
+/* Fertige Regel in der kürzest-möglichen Schreibweise!*/
+/* [class*="col-"]{width: calc(var(--col) - var(--mar-l) - var(--mar-r)  - var(--pad-l) - var(--pad-r));}  */
+/* enspricht nachfolgendem Beispiel Sprechend geschrieben: */
+/*
   .col-16{width: calc(16.6666667% - var(--mar-l) - var(--mar-r)  - var(--pad-l) - var(--pad-r));}
   .col-25{width: calc(25% - var(--mar-l) - var(--mar-r)  - var(--pad-l) - var(--pad-r))}
   .col-33 {width: calc(33.3333% - var(--mar-l) - var(--mar-r)  - var(--pad-l) - var(--pad-r));}
@@ -139,31 +138,61 @@
   .col-83{ width: calc(83.3333% - var(--mar-l) - var(--mar-r)  - var(--pad-l) - var(--pad-r));}
   .col-100{width: calc(100% - var(--mar-l) - var(--mar-r)  - var(--pad-l) - var(--pad-r));} 
   */
-  
-  
-  [class*="col-"].mar-r {width: calc(var(--col) - var(--mar-r));}
-  [class*="col-"].mar-l {width: calc(var(--col) - var(--mar-l));}
-  [class*="col-"].pad-r {width: calc(var(--col) - var(--pad-r));}
-  [class*="col-"].pad-l {width: calc(var(--col) - var(--pad-l));}
-  
-  [class*="col-"].mar-r.mar-l{width: calc(var(--col) - var(--mar-l) - var(--mar-r) );}
-  [class*="col-"].pad-r.pad-l{width: calc(var(--col) - var(--pad-l) - var(--pad-r) );}
-  [class*="col-"].mar-r.pad-r{width: calc(var(--col) - var(--mar-r) - var(--pad-r) );}
-  [class*="col-"].mar-l.pad-l{width: calc(var(--col) - var(--mar-l) - var(--pad-l) );}
-  [class*="col-"].mar-l.pad-r{width: calc(var(--col) - var(--mar-l) - var(--pad-r) );}
-  [class*="col-"].mar-r.pad-l{width: calc(var(--col) - var(--mar-r) - var(--pad-l) );}
-  
-  
-  [class*="col-"].mar-r.pad-l.pad-r{width: calc(var(--col) - var(--mar-r) - var(--pad-r) - var(--pad-l));}
-  [class*="col-"].mar-l.pad-l.pad-r{width: calc(var(--col) - var(--mar-l) - var(--pad-l) - var(--pad-r));}
-  [class*="col-"].mar-l.mar-r.pad-r{width: calc(var(--col) - var(--mar-l) - var(--mar-r) - var(--pad-r) );}
-  [class*="col-"].mar-l.mar-r.pad-l{width: calc(var(--col) - var(--mar-l) - var(--mar-r) - var(--pad-l) );}
-  
-  [class*="col-"].pad-l.pad-r.mar-l.mar-r {width: calc(var(--col) - var(--mar-l) - var(--mar-r)  - var(--pad-l) - var(--pad-r));} 
-  
-  /* Regel wie zuvor jedoch in selbstsprechender Schreibweise  für nur eine Spalte:*/
-  
-  /* 
+
+[class*="col-"].mar-r {
+  width: calc(var(--col) - var(--mar-r));
+}
+[class*="col-"].mar-l {
+  width: calc(var(--col) - var(--mar-l));
+}
+[class*="col-"].pad-r {
+  width: calc(var(--col) - var(--pad-r));
+}
+[class*="col-"].pad-l {
+  width: calc(var(--col) - var(--pad-l));
+}
+
+[class*="col-"].mar-r.mar-l {
+  width: calc(var(--col) - var(--mar-l) - var(--mar-r));
+}
+[class*="col-"].pad-r.pad-l {
+  width: calc(var(--col) - var(--pad-l) - var(--pad-r));
+}
+[class*="col-"].mar-r.pad-r {
+  width: calc(var(--col) - var(--mar-r) - var(--pad-r));
+}
+[class*="col-"].mar-l.pad-l {
+  width: calc(var(--col) - var(--mar-l) - var(--pad-l));
+}
+[class*="col-"].mar-l.pad-r {
+  width: calc(var(--col) - var(--mar-l) - var(--pad-r));
+}
+[class*="col-"].mar-r.pad-l {
+  width: calc(var(--col) - var(--mar-r) - var(--pad-l));
+}
+
+[class*="col-"].mar-r.pad-l.pad-r {
+  width: calc(var(--col) - var(--mar-r) - var(--pad-r) - var(--pad-l));
+}
+[class*="col-"].mar-l.pad-l.pad-r {
+  width: calc(var(--col) - var(--mar-l) - var(--pad-l) - var(--pad-r));
+}
+[class*="col-"].mar-l.mar-r.pad-r {
+  width: calc(var(--col) - var(--mar-l) - var(--mar-r) - var(--pad-r));
+}
+[class*="col-"].mar-l.mar-r.pad-l {
+  width: calc(var(--col) - var(--mar-l) - var(--mar-r) - var(--pad-l));
+}
+
+[class*="col-"].pad-l.pad-r.mar-l.mar-r {
+  width: calc(
+    var(--col) - var(--mar-l) - var(--mar-r) - var(--pad-l) - var(--pad-r)
+  );
+}
+
+/* Regel wie zuvor jedoch in selbstsprechender Schreibweise  für nur eine Spalte:*/
+
+/* 
       .col-33.mar-r {width: calc(33.3333% - var(--mar-r));}
       .col-33.mar-l {width: calc(33.3333% - var(--mar-l));}
       .col-33.pad-r {width: calc(33.3333% - var(--pad-r));}
@@ -185,88 +214,192 @@
       .col-33.pad-l.pad-r.mar-l.mar-r {width: calc(33.3333% - var(--mar-l) - var(--mar-r)  - var(--pad-l) - var(--pad-r));} 
   
   */
-  
-  
-  /*###################################################*/
-  /* Flexbox */
-  /*###################################################*/
-  /* justify, align*/
 
-  .flex,.flex-w{display:flex;}
-  /* Umbruch bei Flexbox erlauben */
-  .flex-w,.flex-wrap{flex-wrap:wrap;}
-  .flex-nw,.flex-nowrap{flex-wrap:nowrap;}
-  /* <div class="flex flex-wrap">
+/*###################################################*/
+/* Flexbox */
+/*###################################################*/
+/* justify, align*/
+
+.flex,
+.flex-w {
+  display: flex;
+}
+/* Umbruch bei Flexbox erlauben */
+.flex-w,
+.flex-wrap {
+  flex-wrap: wrap;
+}
+.flex-nw,
+.flex-nowrap {
+  flex-wrap: nowrap;
+}
+/* <div class="flex flex-wrap">
     ..
     ..
     ..
   </div>
   */
-  /*
+/*
   <div class="flex-w">
     ..
     ..
     ..
   </div>
   */
-  /*flex-klasse*/
-  .justify-content{
-    justify-content: center;
-  }
-  .justify-content-sb{
-    justify-content: space-around;
-  }
-  .flex-grow,.grow,.f-grow{
-    flex-grow: 1;
-  }
-  .flex-grow-2,.grow-2,.f-grow-2{
-    flex-grow: 2;
+/*flex-klasse*/
+.justify-content {
+  justify-content: center;
 }
-  /*###################################################*/
-  /* Floats*/
-  /*###################################################*/
-  .float-l,.fl-l{float:left;}
-  .float-r,.fl-r{float:right;}
-  
-  .clear{clear:both;}
-  .clearfix:after{
-    content:"";
-    display:table;
-    clear:both;
-  }
-  
-  /* Hilfsklassen*/
-  .img-scale,.scale{
-    width:100%;
-    height:auto;
-  }
-  
-  /* Schmalste darstellung für spalten */
+.justify-content-sb {
+  justify-content: space-around;
+}
+.flex-grow,
+.grow,
+.f-grow {
+  flex-grow: 1;
+}
+.flex-grow-2,
+.grow-2,
+.f-grow-2 {
+  flex-grow: 2;
+}
+/*###################################################*/
+/* Floats*/
+/*###################################################*/
+.float-l,
+.fl-l {
+  float: left;
+}
+.float-r,
+.fl-r {
+  float: right;
+}
+
+.clear {
+  clear: both;
+}
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Hilfsklassen*/
+.img-scale,
+.scale {
+  width: 100%;
+  height: auto;
+}
+
+/*###################################################*/
+/* Hamburger Menu */
+/*###################################################*/
+/* open /close  linksstandardmäßig verstecken*/
+.open,
+.close {
+  position: relative;
+  display: none;
+}
+
+/* Schmalste darstellung für spalten */
 
 /* Mindestbreite für adaptives Seitenverhalten */
-[class*="col-"]{
-  min-width:160px;
+[class*="col-"] {
+  min-width: 160px;
 }
-@media screen and (max-width:60em){
-    /* body{
+@media screen and (max-width: 60em) {
+  /* body{
         background-color: #ffe1be;
     } */
-  .col-16{
-    --col:33%;
+  .col-16 {
+    --col: 33%;
   }
 
-  .col-25{
-    --col:50%;
+  .col-25 {
+    --col: 50%;
   }
-}
 
-@media screen and (max-width:30em){
-[class*="col-"]{
-  --col:100%;
-  /* background: #fff784; */
-}
-/* .flex{display:block} */
-.flex{flex-direction:column;}
-}
-
+  #header nav > ul {
+    display: block; /*replace display flex*/
+    /* background-color: rgb(189, 255, 90); */
+  }
+  #header nav > li > a {
+    margin: 0;
+  }
+  /* Hide the nav*/
+  #header nav > ul {
+    /* display: block; */
+    position: relative;
+    right: -600px;
+    display: none;
+  }
   
+
+
+
+  .open {
+    display: block;
+    /* background-color: yellow; */
+  }
+
+  /* When click on open → show the nav */
+  .open:target ~ #hamburger {
+    position: relative;
+    right: 0;
+    display: block;
+    transition: right 2s;
+  }
+  /* When click on open → hide open button */
+  .open:target {
+    display: none;
+  }
+  /* When click on open → show the close button */
+  .open:target ~ .close {
+    display: block;
+    /* margin-top: 15px; */
+  }
+
+.open, .close{
+        width:2em;
+        height:1.5em;
+        overflow:hidden;
+        margin-left:auto;
+        padding-right: 10px;
+        transition:all 1s;
+        color:var(--color4);
+      }
+
+      .open:hover,.close:hover{
+        color:var(--color3);
+      }  
+/* Hamburger icon */
+      .open:before{
+        content:"";
+        border-top:5px solid;
+        border-bottom:double 14px;
+        display:inline-block;
+        width:80%;
+        padding:4px 0 0;
+        border-radius: 2px;
+      }
+      /* Close icon */
+      .close:before{
+        content:"x";
+        display:inline-block;
+        width:80%;
+        font-family:'Gill Sans', 'Gill Sans MT',sans-serif;
+        text-transform:capitalize;
+        font-size:30px;
+        line-height:22px;
+      }
+}
+@media screen and (max-width: 30em) {
+  [class*="col-"] {
+    --col: 100%;
+    /* background: #fff784; */
+  }
+  /* .flex{display:block} */
+  .flex {
+    flex-direction: column;
+  }
+}

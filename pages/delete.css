@@ -1,0 +1,35 @@
+.hamburger{
+        display: block;
+        position: absolute;
+        left: 0;
+        height: 4px;
+        width: 30px;
+        background:var(--color4);
+        border-radius: 3px;
+        opacity: 0.9;
+    }
+    .open>.hamb1{
+    top: 5px;
+    transform: rotate(0);
+    /* animation: hamb1-anim .5s ease-in-out backwards; */
+          }
+    .open>.hamb2{
+        top: 12px;
+        /* animation: hamb2-anim .5s ease-in-out forwards; */
+    }
+    .open>.hamb3{
+        top: 20px;
+        /* animation: hamb3-anim .5s ease-in-out forwards; */
+    }
+
+    .close>.hamb1{
+      top: 50%;
+      transform: rotate(45deg);
+      /* animation: hamb1-close-anim .5s ease-in-out forwards; */
+    }
+    
+    .close>.hamb2{
+        top: 50%;
+        transform: rotate(315deg);
+        /* animation: hamb2-close-anim .5s ease-in-out forwards; */
+    }
