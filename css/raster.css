@@ -10,6 +10,7 @@
 
 /*###############################################*/
 /* horizontales zentrieren von Blockelementen*/
+
 .wrap {
   margin-left: auto;
   margin-right: auto;
@@ -115,30 +116,6 @@
 }
 
 /* Abstandsberechnung */
-
-/* Schreibweise kann noch weiter gekürzt werden sofern die Abstandsvariablen in root immer auf 0 gesetzt bleiben*/
-/* Abstände selbst sind dann denn abstandsklassen (.mar-l, .mar-r ,.pad-l, .pad-r) und ggf. weiteren mittles Variablen zu zuweisen*/
-/* Die Breite wurde für diese Beispiel wieder ausgeschrieben um die Lesbarkeit zu verbessern das arbeiten wie zuvor mit der Variable --col ist jedoch empfehlenswerter*/
-/* Beispiel:
-  .col-16{
-    --col:16.6666667%
-    width: calc(var(--col) - var(--mar-l) - var(--mar-r)  - var(--pad-l) - var(--pad-r));
-  }
-  */
-/* Fertige Regel in der kürzest-möglichen Schreibweise!*/
-/* [class*="col-"]{width: calc(var(--col) - var(--mar-l) - var(--mar-r)  - var(--pad-l) - var(--pad-r));}  */
-/* enspricht nachfolgendem Beispiel Sprechend geschrieben: */
-/*
-  .col-16{width: calc(16.6666667% - var(--mar-l) - var(--mar-r)  - var(--pad-l) - var(--pad-r));}
-  .col-25{width: calc(25% - var(--mar-l) - var(--mar-r)  - var(--pad-l) - var(--pad-r))}
-  .col-33 {width: calc(33.3333% - var(--mar-l) - var(--mar-r)  - var(--pad-l) - var(--pad-r));}
-  .col-50{ width: calc(50% - var(--mar-l) - var(--mar-r)  - var(--pad-l) - var(--pad-r));}
-  .col-66{width: calc(66.6666667% - var(--mar-l) - var(--mar-r)  - var(--pad-l) - var(--pad-r));}
-  .col-75{width: calc(75% - var(--mar-l) - var(--mar-r)  - var(--pad-l) - var(--pad-r));}
-  .col-83{ width: calc(83.3333% - var(--mar-l) - var(--mar-r)  - var(--pad-l) - var(--pad-r));}
-  .col-100{width: calc(100% - var(--mar-l) - var(--mar-r)  - var(--pad-l) - var(--pad-r));} 
-  */
-
 [class*="col-"].mar-r {
   width: calc(var(--col) - var(--mar-r));
 }
@@ -190,31 +167,6 @@
   );
 }
 
-/* Regel wie zuvor jedoch in selbstsprechender Schreibweise  für nur eine Spalte:*/
-
-/* 
-      .col-33.mar-r {width: calc(33.3333% - var(--mar-r));}
-      .col-33.mar-l {width: calc(33.3333% - var(--mar-l));}
-      .col-33.pad-r {width: calc(33.3333% - var(--pad-r));}
-      .col-33.pad-l {width: calc(33.3333% - var(--pad-l));}
-  
-      .col-33.mar-r.mar-l{width: calc(33.3333% - var(--mar-l) - var(--mar-r) );}
-      .col-33.pad-r.pad-l{width: calc(33.3333% - var(--pad-l) - var(--pad-r) );}
-  
-      .col-33.mar-r.pad-r{width: calc(33.3333% - var(--mar-r) - var(--pad-r) );}
-      .col-33.mar-l.pad-l{width: calc(33.3333% - var(--mar-l) - var(--pad-l) );}
-      .col-33.mar-l.pad-r{width: calc(33.3333% - var(--mar-l) - var(--pad-r) );}
-      .col-33.mar-r.pad-l{width: calc(33.3333% - var(--mar-r) - var(--pad-l) );}
-  
-      .col-33.mar-r.pad-l.pad-r{width: calc(33.3333% - var(--mar-r) - var(--pad-r) - var(--pad-l));}
-      .col-33.mar-l.pad-l.pad-r{width: calc(33.3333% - var(--mar-l) - var(--pad-l) - var(--pad-r));}
-      .col-33.mar-l.mar-r.pad-r{width: calc(33.3333% - var(--mar-l) - var(--mar-r) - var(--pad-r) );}
-      .col-33.mar-l.mar-r.pad-l{width: calc(33.3333% - var(--mar-l) - var(--mar-r) - var(--pad-l) );}
-      
-      .col-33.pad-l.pad-r.mar-l.mar-r {width: calc(33.3333% - var(--mar-l) - var(--mar-r)  - var(--pad-l) - var(--pad-r));} 
-  
-  */
-
 /*###################################################*/
 /* Flexbox */
 /*###################################################*/
@@ -233,19 +185,7 @@
 .flex-nowrap {
   flex-wrap: nowrap;
 }
-/* <div class="flex flex-wrap">
-    ..
-    ..
-    ..
-  </div>
-  */
-/*
-  <div class="flex-w">
-    ..
-    ..
-    ..
-  </div>
-  */
+
 /*flex-klasse*/
 .justify-content {
   justify-content: center;
@@ -307,24 +247,19 @@
 [class*="col-"] {
   min-width: 160px;
 }
-@media screen and (max-width: 60em) {
-  /* body{
-        background-color: #ffe1be;
-    } */
-  .col-16 {
-    --col: 33%;
-  }
-
-  .col-25 {
-    --col: 50%;
-  }
+@media screen and (max-width:60em) {
 
   #header nav > ul {
     display: block; /*replace display flex*/
     /* background-color: rgb(189, 255, 90); */
+    padding: 0;
+    flex-direction: column;
+    padding-left: 1em;
+    padding: 1em 0 1em 1em;
   }
   #header nav > li > a {
     margin: 0;
+
   }
   /* Hide the nav*/
   #header nav > ul {
@@ -332,11 +267,15 @@
     position: relative;
     right: -600px;
     display: none;
+    z-index: 500;
+    background-color: var(--color2);
+    box-shadow: 0px 0px 5px 1px #f1f1f1;
+    width: 200px;
   }
+  #header nav li>a:hover::before{
+    width: 50%;
+}
   
-
-
-
   .open {
     display: block;
     /* background-color: yellow; */
@@ -344,7 +283,7 @@
 
   /* When click on open → show the nav */
   .open:target ~ #hamburger {
-    position: relative;
+    position: absolute;
     right: 0;
     display: block;
     transition: right 2s;
@@ -372,7 +311,7 @@
       .open:hover,.close:hover{
         color:var(--color3);
       }  
-/* Hamburger icon */
+      /* Hamburger icon */
       .open:before{
         content:"";
         border-top:5px solid;
@@ -396,10 +335,6 @@
 @media screen and (max-width: 30em) {
   [class*="col-"] {
     --col: 100%;
-    /* background: #fff784; */
   }
-  /* .flex{display:block} */
-  .flex {
-    flex-direction: column;
-  }
+
 }

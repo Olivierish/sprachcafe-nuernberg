@@ -1,80 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About</title>
-</head>
-<style>
-    @font-face{
-    font-family:'Playlist Caps'; /* Schriftnamen deklarieren*/
-    /* src:url('../fonts/PlaylistFF/BellMT.eot');  */
-    /*src:local('schriftname') erlaubt den localen Aufruf auch ohne http/(s)-request */
-    src: url('../fonts/PlaylistFF/Playlist Caps.otf') format('opentype');
-    /* font-weight:normal;
-    font-style:normal; 	 */
-    }
-    @font-face{
-    font-family:'Playlist Script'; /* Schriftnamen deklarieren*/
-    /* src:url('../fonts/PlaylistFF/BellMT.eot');  */
-    /*src:local('schriftname') erlaubt den localen Aufruf auch ohne http/(s)-request */
-    src: url('../fonts/PlaylistFF/Playlist Script.otf') format('opentype');
-    font-weight:normal;
-    font-style:normal;
-    }
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>☕Sprachcafé Nürnberg - About us</title>
+    <link rel="stylesheet" href="../css/fonts.css" />
+    <link rel="stylesheet" href="../css/global.css" />
+    <link rel="stylesheet" href="../css/raster.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <div class="wrap">
+      <div id="header" class="flex col-100 pad-l pad-r">
+        <header class="col-33 flex-nw">
+          <a href="../index.html" class="flex">
+            <img src="../media/logo_cup_exp4.png" alt="cup" />
+            <h2>Sprach<span>café</span></h2>
+          </a>
+        </header>
 
-    h1{
-        font-family: 'Playlist Caps', monospace;
-        color: orange;
-    }
-    .logo>h2{
-        font-family: 'Playlist Script', monospace;
-        color: #494949;
-        color: #464646;
-        /* height: 100px; */
-        /* width: 400px; */
-        font-weight: bold;
-        font-size: 1.5em;
-        text-transform: uppercase;
-        /* background: url('../media/logo_bg2_exp.png'); */
-        background-position: 0 0;
-        background-size: contain;
-        background-repeat: no-repeat;
-        /* outline: 1px solid coral; */
-        padding: 0;
-        margin: 0;
-        text-align: left;
-        margin-top: 35px; 
-        padding-left: 5px;
-        align-self: center;
+        <nav class="col-66">
+          <!-- Toggle hamburger -->
+          <a href="#open" class="open" id="open">open</a>
+          <a href="#" class="close">close</a>
 
-    }
-    .logo>h2>span{
-        color:#f1820e
-    }
-    .logo>img{
-        display: block;
-        width: 90px;
-        height:90px;
-    }
-    .logo{
-        display: flex;
-        outline: 1px solid green;
-    }
-</style>
-<body>
-    <div id="logo">
-        <img src="../media/logo_cup_exp.png" alt="Sprachcafé logo">
-        <!-- <img src="../media/logo_bg2_exp.png" alt="Sprachcafé logo"> -->
+          <ul class="flex" id="hamburger">
+            <!-- FIXME: AVANT D'ENVOYER Remettre "/pages/" au lieu de "pages/"-->
+            <li>
+              <a href="../index.html" title="Welcome to Sprachcafé">Home</a>
+            </li>
+            <li><a href="about.html" class="active" title="About us">About</a></li>
+            <li><a href="events.html" title="All events">Events</a></li>
+            <li>
+              <a href="activities.html" title="Activities for the event"
+                >Activities</a
+              >
+            </li>
+            <!-- <li><a href="members_notes.html" title="Members notes">Members Notes</a></li> -->
+            <li><a href="contact.html" title="Contact us">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div id="container">
+        <article class="about">
+          <h1>About Us</h1>
+          <p>
+            Sprachcafé Nürnberg was founded by Olivier Ishimwe, in October 2022.  
+          </p>
+          <figure>
+            <img src="../media/olivier2.jpg" alt="olivier the founder">
+          </figure>
+
+            <blockquote>
+                "I got my inspiration from an exchange language group in Regensburg. It's called
+                Sprachcafé as well and I really enjoyed the concept. It is different from other 
+                exchange groups out there, where people meet and just talk and drink. In Regensburg, we had papers and pens, writting down all new words
+                doing some games related to languages while having fun!" <br> - Olivier I.
+            </blockquote>
+
+          <p>
+            The event has grown up, averaging 35 to 40 people per event. We are now a team of
+            3 people in charge of organizing the event. 
+          </p>
+          <p>
+            Alot of Projects are in the process of development :
+          </p>
+            <ul>
+                <li>
+                    <strong>Introducing themed events</strong>, where we will focus on one language, learn about about people who speaks it and a bit of history.
+                </li>
+                <li>
+                    <strong>Reading events</strong> : People will read texts from their languages(even languages which are not on the program). The focus will not be to understand, but to listen and appreciate the sounds.  
+                </li>
+                <li>
+                    <strong>Music events</strong>, in the group we have talented people who are looking forward to play music from their different origins. 
+                </li>
+
+            </ul>
+
+
+        </article>
+      </div> 
+      <footer class="col-100">
+        <section>
+          <h3>Join Us</h3>
+          <div class="socials flex-w col-50">
+          
+            <div class="meetups">
+                <a href="https://www.meetup.com/international-friends-meetup-nuremberg/events/291852269/?utm_medium=referral&utm_campaign=share-btn_savedevents_share_modal&utm_source=link">
+                  <img src="../media/logo_meetups.png" alt="Meetups logo" title="Meetups">
+                </a>
+              </div>
+              <div class="insta">
+                <a href="https://www.instagram.com/sprachcafeofficial/">
+                  <img src="../media/logo_instagram.png" alt="Instagram logo" title="Instagram">
+                </a>
+              </div>
+              <div class="whatsapp">
+                <a href="https://chat.whatsapp.com/HX5xloNg7gL0EH0yjuHntT">
+                  <img src="../media/logo_whatsapp.png" alt="Whatsapp logo" title="Whatsapp">
+                </a>
+              </div>
+        </div>
+        </section>
+        <div class="copyright-impressum flex justify-content col-100">
+          <div class="copyright col-33">&copy; Olivieris</div>
+          <div class="impressum col-33">
+            <a href="impressum.html">Impressum</a>
+          </div>
+        </div>
+      </footer>
     </div>
-    About
-    <h1>Sprachcafé</h1>
-
-    <div class="logo">
-        <img src="../media/logo_cup_exp4.png" alt="cup">
-        <h2>Sprach<span>café</span></h2>
-    </div>
-
-</body>
+  </body>
 </html>

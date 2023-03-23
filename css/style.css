@@ -37,6 +37,7 @@
     padding-top: 10px;
     background-color: var(--page-bg);
     box-shadow: 0px 1px 9px -8px #7a7a7a;
+    z-index: 1000;
 }
 
 header a{
@@ -69,6 +70,8 @@ header h2{
 
 #header nav{
     /* align-self: end; */
+    position: relative;
+    padding-top: 1em;
 }
 
 #header ul{
@@ -91,6 +94,7 @@ header h2{
     font-weight: bold;
     color: var(--color4);
     text-decoration: none;
+    /* text-transform: uppercase; */
     
 }
 
@@ -110,7 +114,7 @@ header h2{
     opacity: 0;
 }
 #header li>a:hover::before{
-    width: 100%;
+    width: 75%;
     opacity: 1;
 }
 
@@ -121,17 +125,233 @@ header h2{
     color:var(--color3);
 }
 
+#container p, 
+#container address,
+#container h1,
+#container h2,
+#container .formContent div{
+    padding: 0 20px;
+}
+#container blockquote{
+    font-style: italic;
+}
+#container address{
+    text-align: center;
+}
+article{
+    position: relative;
+    height: fit-content;
+}
 
 /* **************** */
 /*   HERO SECTION   */
 /* **************** */
-#hero>.heroIntro>img{
-    width: 400px;
+#hero>.heroIntro{
+    position: relative;
+    margin: 0 auto;
+    
 }
+
+#hero>.heroIntro>img{
+    display: block;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    height:auto;
+    opacity: 0.2;
+}
+
+#hero .heroIntroContent{
+    position: absolute;
+    top: 25%;
+    width: 100%;
+
+}
+
+.heroIntroContent h1,.heroIntroContent h3{
+    text-align: center;
+}
+.heroIntroContent p{
+    text-align: center;
+   
+}
+
+
+
 #hero ul{
     list-style-type: none;
+    padding: 0;
+    justify-content: space-evenly;
 }
-#hero ul img{
-    width: 50px;
+#hero ul>li{
+    width: 4em;
+}
+#hero li>img{
+    display: block;
+    width: 70%;
     height: auto;
+    margin: 0 auto;
+}
+#hero li>p{
+    margin: 0;
+    padding: 0;
+    margin-top: 5px;
+    font-size: 0.8em;
+}
+
+section.howIt{
+    position: relative;
+    padding-top: 200px;
+}
+
+
+/* **************** */
+/*      Footer      */
+/* **************** */
+footer{
+    background: var(--color4);
+    margin-top: 200px;
+    position: relative;
+    bottom: 0;
+}
+
+footer h3{
+    text-align: center;
+    padding-top: 1em;
+    margin-bottom: 0;
+    color: var(--color3);
+}
+
+footer .socials{
+    --pad-r:1em;
+    --pad-l:1em;
+    padding: 1em var(--pad-r) 1em var(--pad-l);
+    height: 80px;
+    justify-content: space-around;
+    margin: 0 auto;
+}
+.socials>*{
+    width: 3em;
+}
+.socials img{
+    display: block;
+    width: 100%;
+    height: auto;
+    opacity: 0.8;
+}
+.socials a:hover img{
+    opacity: 1;
+}
+.socials .meetups img{
+    border-radius: 20px;
+}
+
+.copyright-impressum{
+    color: var(--color2);
+    opacity: 0.8;
+    font-weight: 500;
+    width: var(--col);
+}
+
+.copyright-impressum .copyright,
+.copyright-impressum .impressum{
+    text-align: center;
+}
+
+.copyright-impressum .impressum a{
+    padding-bottom: 10px;
+}
+
+.card{
+    border: 1px solid rgb(243, 243, 243);
+    max-width: 600px;
+    border-radius: 8px;
+    box-shadow: 0 0 8px 5px rgb(231, 231, 231);
+    margin: 0 auto;
+    padding: 1em;
+    margin-bottom: 1em;
+}
+.card li{
+    margin-bottom: 0.8em;
+}
+
+
+/* **************** */
+/*   Page about us  */
+/* **************** */
+article.about,
+div.impressum-block,
+div.events{
+    margin-top: 100px;
+}
+article.about>figure{
+    width: 250px;
+    margin: 0 auto;
+}
+article.about>figure img{
+    width: 100%;
+    height: auto;
+}
+
+article.about>ul>li{
+    margin-bottom: 10px;
+}
+
+/* **************** */
+/*   Page Events    */
+/* **************** */
+/* div.events{
+
+} */
+
+/* **************** */
+/*  Page Activities */
+/* **************** */
+
+
+/* **************** */
+/*  Page Contact    */
+/* **************** */
+.formContent input[type="text"],
+.formContent input[type="email"],
+.formContent textarea{
+    font-size: 1em;
+    font-family: var(--page-text-font);
+}
+.formContent textarea{
+    display: block;
+    width: 250px;
+    height: 150px;
+}
+
+.formContent .contactButton{
+    width: 50%;
+    margin: 20px auto;
+}
+.formContent .contactButton input{
+    height: 40px;
+    width: 150px;
+    font-size: 1em;
+    font-family: var(--page-text-font);
+    cursor: pointer;
+}
+.formContent .contactButton input:hover{
+    color: var(--color3);
+    border-color: var(--color3);
+    outline-color: var(--color3);
+}
+
+@media screen and (max-width:60em) {
+    footer .socials{
+        --pad-l:0;
+        --pad-r:0;
+        --col:100%;
+      }  
+      #hero>.heroIntro{
+        --col:100%;
+      }
+     
+}
+@media screen and (max-width: 30em) {
+
 }

@@ -13,99 +13,91 @@
   <body>
     <div class="wrap">
       <div id="header" class="flex col-100 pad-l pad-r">
-        <header class="out7 col-33 flex-nw">
-          <a href="index.html" class="flex">
+        <header class="col-33 flex-nw">
+          <a href="/index.html" class="flex">
             <img src="../media/logo_cup_exp4.png" alt="cup" />
             <h2>Sprach<span>café</span></h2>
           </a>
         </header>
 
-        <nav class="out5 col-66">
+        <nav class="col-66">
           <!-- Toggle hamburger -->
           <a href="#open" class="open" id="open">open</a>
-          
-          <!-- <a href="#open" class="open" id="open">
-            <span class="hamburger hamb1"></span>
-            <span class="hamburger hamb2"></span>
-            <span class="hamburger hamb3"></span>
-          </a> -->
           <a href="#" class="close">close</a>
-          <!-- <a href="#" class="close">
-            <span class="hamburger hamb1"></span>
-            <span class="hamburger hamb2"></span>
-          </a> -->
+
           <ul class="flex" id="hamburger">
-            <!-- FIXME: AVANT D'ENVOYER Remettre "/pages/" au lieu de "pages/"-->
             <li>
-              <a href="index.html" class="active" title="Home page">Home</a>
+              <a href="/index.html" class="active" title="Welcome to Sprachcafé">Home</a>
             </li>
-            <li><a href="pages/about.html" title="About us">About</a></li>
-            <li><a href="pages/events.html" title="All events">Events</a></li>
+            <li><a href="/pages/about.html" title="About us">About</a></li>
+            <li><a href="/pages/events.html" title="All events">Events</a></li>
             <li>
-              <a href="pages/activities.html" title="Activities for the event"
-                >Activities</a
-              >
+              <a href="/pages/activities.html" title="Activities for the event"
+                >Activities</a>
             </li>
-            <!-- <li><a href="pages/members_notes.html" title="Members notes">Members Notes</a></li> -->
-            <li><a href="pages/contact.html" title="Contact us">Contact</a></li>
+            <li><a href="/pages/contact.html" title="Contact us">Contact</a></li>
           </ul>
         </nav>
       </div>
       <div id="container">
-        <article id="hero" class="out1">
-          <div class="heroIntro out2">
-            <img src="media/globe1.png" alt="Image" />
-            <div class="heroIntroContent out3">
-              <h1>Welcome to Sprachcafé Nürnberg</h1>
+        <article id="hero" class="col-100">
+          <div class="heroIntro col-50">
+            <img src="media/globe1.png" alt="Globe"/>
+            <div class="heroIntroContent">
+              <h1>Welcome to Sprachcafé !</h1>
               <p>
-                Do you want to speak langauges? Speaking and learning different
-                languages, meeting people from all over the world, having fun!
+                Do you want to speak and improve your languages skills? 
+                In Sprachcafé Nürnberg you will meet people who shares the same goals as you! <br>
+                In our events you will be able to Speak and learn different
+                languages, to meet people from all over the world and to have fun!
               </p>
+              <div class="heroLanguages">
+                <h3>Available Languages</h3>
+                <ul class="flex">
+                  <li>
+                    <img
+                      src="media/germany.png"
+                      alt="German flag"
+                    />
+                    <p>German</p>
+                  </li>
+                  <li>
+                    <img
+                      src="media/uk2.png"
+                      alt="UK's flag"
+                    />
+                    <p>English</p>
+                  </li>
+                  <li>
+                    <img
+                      src="media/france.png"
+                      alt="French flag"
+                    />
+                    <p>French</p>
+                  </li>
+                  <li>
+                    <img
+                      src="media/spain.png"
+                      alt="Spanish flag"
+                    />
+                    <p>Spanish</p>
+                  </li>
+                  <li>
+                    <img
+                      src="media/italy.png"
+                      alt="Italian flag"
+                    />
+                    <p>Italian</p>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
-          <div class="heroLanguages">
-            <ul class="flex">
-              <li>
-                <img
-                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Flag_of_France_%28lighter_variant%29.svg/1280px-Flag_of_France_%28lighter_variant%29.svg.png"
-                  alt=""
-                />
-                <p>German</p>
-              </li>
-              <li>
-                <img
-                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Flag_of_France_%28lighter_variant%29.svg/1280px-Flag_of_France_%28lighter_variant%29.svg.png"
-                  alt=""
-                />
-                <p>English</p>
-              </li>
-              <li>
-                <img
-                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Flag_of_France_%28lighter_variant%29.svg/1280px-Flag_of_France_%28lighter_variant%29.svg.png"
-                  alt=""
-                />
-                <p>French</p>
-              </li>
-              <li>
-                <img
-                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Flag_of_France_%28lighter_variant%29.svg/1280px-Flag_of_France_%28lighter_variant%29.svg.png"
-                  alt=""
-                />
-                <p>Spanish</p>
-              </li>
-              <li>
-                <img
-                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Flag_of_France_%28lighter_variant%29.svg/1280px-Flag_of_France_%28lighter_variant%29.svg.png"
-                  alt=""
-                />
-                <p>Italian</p>
-              </li>
-            </ul>
-          </div>
+         
         </article>
 
-        <section>
-          <h2>How it works</h2>
+        <section class="howIt">
+          <h2>How it works?</h2>
           <p>
             People will join the group of the language of their interest. of
             course you can move from one group to another during the event as
@@ -120,18 +112,49 @@
             Depending on the demand, other languages will be included in the
             future. We're looking forward to meeting you ! 🤗
           </p>
-        </section>
-      </div>
-      <footer>
-        <div class="socials flex out5">
-          <div class="insta">Meetups</div>
-          <div class="insta">Instagram</div>
-          <div class="insta">Whatsapp</div>
-        </div>
 
-        <div class="copyright-impressum flex">
-          <div class="copyright">&copy; Olivieris</div>
-          <div class="impressum">
+          <h2>Where? and When?</h2>
+          <div class="cards-container">
+            <section class="card">
+                <p>Our events take place each 2 weeks at :</p>
+            <address>
+              Kilians Irish Pub <br>
+              Hallpl. 21 <br>
+              Nürnberg, Bayern
+            </address>
+          <p>
+            ➡<a href="pages/events.html">Our Next Events</a>
+          </p>
+            </section>
+            </div>
+        </section>
+
+      </div> 
+      <footer class="col-100">
+        <section>
+          <h3>Join Us</h3>
+        <div class="socials flex-w col-50">
+          
+          <div class="meetups">
+            <a href="https://www.meetup.com/international-friends-meetup-nuremberg/events/291852269/?utm_medium=referral&utm_campaign=share-btn_savedevents_share_modal&utm_source=link">
+              <img src="media/logo_meetups.png" alt="Meetups logo" title="Meetups">
+            </a>
+          </div>
+          <div class="insta">
+            <a href="https://www.instagram.com/sprachcafeofficial/">
+              <img src="media/logo_instagram.png" alt="Instagram logo" title="Instagram">
+            </a>
+          </div>
+          <div class="whatsapp">
+            <a href="https://chat.whatsapp.com/HX5xloNg7gL0EH0yjuHntT">
+              <img src="media/logo_whatsapp.png" alt="Whatsapp logo" title="Whatsapp">
+            </a>
+          </div>
+        </div>
+        </section>
+        <div class="copyright-impressum flex justify-content col-100">
+          <div class="copyright col-33">&copy; Olivieris</div>
+          <div class="impressum col-33">
             <a href="pages/impressum.html">Impressum</a>
           </div>
         </div>

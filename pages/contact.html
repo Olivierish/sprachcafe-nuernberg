@@ -1,12 +1,169 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
-</head>
-<body>
-    Contact
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>☕Sprachcafé Nürnberg - Contact us</title>
+    <link rel="stylesheet" href="../css/fonts.css" />
+    <link rel="stylesheet" href="../css/global.css" />
+    <link rel="stylesheet" href="../css/raster.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <div class="wrap">
+        <div id="header" class="flex col-100 pad-l pad-r">
+            <header class="col-33 flex-nw">
+                <a href="../index.html" class="flex">
+                    <img src="../media/logo_cup_exp4.png" alt="cup" />
+                    <h2>Sprach<span>café</span></h2>
+                </a>
+            </header>
+
+            <nav class="col-66">
+            <!-- Toggle hamburger -->
+            <a href="#open" class="open" id="open">open</a>
+            <a href="#" class="close">close</a>
+
+            <ul class="flex" id="hamburger">
+                <!-- FIXME: AVANT D'ENVOYER Remettre "/pages/" au lieu de "pages/"-->
+                <li>
+                <a href="../index.html" title="Welcome to Sprachcafé">Home</a>
+                </li>
+                <li><a href="about.html" title="About us">About</a></li>
+                <li><a href="events.html" title="All events">Events</a></li>
+                <li>
+                <a href="activities.html"  title="Activities for the event"
+                    >Activities</a
+                >
+                </li>
+                <!-- <li><a href="members_notes.html" title="Members notes">Members Notes</a></li> -->
+                <li><a href="contact.html" class="active" title="Contact us">Contact</a></li>
+            </ul>
+            </nav>
+      </div>
+      <div id="container">
+        <div class="events col-100">
+          <h1>Contact us and Join our group</h1>
+          <p>
+            Here are some activities that can be helpful on your table, of course you are allowed to use your creativity, suggest other interesting activities, only the sky's the limit!!! 
+          </p>
+
+          <div class="cards-container">
+            <section class="card">
+                    <h3>Fill the formular</h3>
+                    <div class="formContent">
+                        <form name="contact" method="POST" action="#">
+                          <p>
+                            <label for="name" class="contact">Name:</label>
+                            <input type="text" name="name" id="name" required />
+                          </p>
+                          <p>
+                            <label for="firstname" class="contact">First name:</label>
+                            <input type="text" name="firstname" id="firstname"/>
+                          </p>
+                          <p>
+                            <label for="email" class="contact">Email:</label>
+                            <input type="email" name="email" id="email" required />
+                          </p>
+                          <p>
+                            <label for="message" class="contact">Message:</label>
+                            <textarea name="nachricht" id="message"></textarea>
+                          </p>
+                          <p>
+                            <span class="contact">Newsletter?</span>
+                            <input type="checkbox" name="newsletter" id="newsletter" value="yes"/>
+                            <label for="newsletter"> Yes</label>
+                          </p>
+
+                          <p>Which languages are you interested in?</p>
+                          <div>
+                            <input type="checkbox" name="french" id="french" value="fr" />
+                            <label for="french"> French</label>
+                          </div>
+                            <div>
+                                <input type="checkbox" name="german" id="german" value="ge" />
+                                <label for="german"> German</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" name="english" id="english" value="en" />
+                                <label for="english"> English</label>        
+                            </div>
+                            <div>
+                                <input type="checkbox" name="italian" id="italian" value="it" />
+                                <label for="italian"> Italian</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" name="spanish" id="spanish" value="sp" />
+                                <label for="spanish"> Spanish</label>
+                            </div>
+
+
+
+                          <p>How did you found us?</p>
+                          <div>
+                            <input type="radio" name="foundUs" id="internet" value="1" />
+                            <label for="internet"> Internet</label>
+                          </div>
+                            <div>
+                                <input type="radio" name="foundUs" id="meetups" value="2" />
+                                <label for="meetups"> Meetups</label>
+                            </div>
+                            <div>
+                                <input type="radio" name="foundUs" id="socialMedia" value="3" />
+                                <label for="socialMedia"> Social Media</label>        
+                            </div>
+                            <div>
+                                <input type="radio" name="foundUs" id="wOfM" value="4" />
+                                <label for="wOfM"> Word of mouth</label>
+                            </div>
+                            <div>
+                                <input type="radio" name="foundUs" id="other" value="7" />
+                                <label for="other">Other</label>
+                            </div>
+
+                          <p class="contactButton">
+                            <input type="submit" name="send" value="send" />
+                          </p>
+                        </form>
+                      </div>
+            </section>
+  
+
+           
+
+        </div> 
+    </div>
+      </div> 
+      <footer class="col-100">
+        <section>
+          <h3>Join Us</h3>
+        <div class="socials flex-w col-50">
+          
+            <div class="meetups">
+                <a href="https://www.meetup.com/international-friends-meetup-nuremberg/events/291852269/?utm_medium=referral&utm_campaign=share-btn_savedevents_share_modal&utm_source=link">
+                  <img src="../media/logo_meetups.png" alt="Meetups logo" title="Meetups">
+                </a>
+              </div>
+              <div class="insta">
+                <a href="https://www.instagram.com/sprachcafeofficial/">
+                  <img src="../media/logo_instagram.png" alt="Instagram logo" title="Instagram">
+                </a>
+              </div>
+              <div class="whatsapp">
+                <a href="https://chat.whatsapp.com/HX5xloNg7gL0EH0yjuHntT">
+                  <img src="../media/logo_whatsapp.png" alt="Whatsapp logo" title="Whatsapp">
+                </a>
+              </div>
+        </div>
+        </section>
+        <div class="copyright-impressum flex justify-content col-100">
+          <div class="copyright col-33">&copy; Olivieris</div>
+          <div class="impressum col-33">
+            <a href="impressum.html">Impressum</a>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
 </html>
