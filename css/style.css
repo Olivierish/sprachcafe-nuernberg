@@ -1,33 +1,3 @@
-/* TODO: Test  */
-.out0{
-    outline: 1px solid gray;
-}
-.out1{
-    outline: 1px solid tomato;
-}
-.out2{
-    outline: 1px solid teal;
-}
-.out3{
-    outline: 1px solid green;
-}
-.out5{
-    outline: 1px solid yellow;
-}
-.out6{
-    outline: 1px solid rgb(255, 0, 242);
-}
-.out7{
-    outline: 1px solid rgb(0, 4, 255);
-}
-.out8{
-    outline: 1px solid rgb(255, 0, 0);
-}
-/* .wrap{
-    position: relative;
-} */
-
-
 /* **************** */
 /*  HEADER SECTION  */
 /* **************** */
@@ -45,24 +15,27 @@ header a{
     background-color: none;
     text-decoration: none;
 }
+
 header a:hover,
 header a:focus{
     background-color: none;
 }
+
+/*Logo*/
 header img{
     width: 40px;
     height: 40px;
 }
 
 header h2{
-    font-family: 'Playlist Script', monospace;
+    font-family: var(--font4-1);
     color: var(--color4);
     font-size: 1.0em;
     text-transform: uppercase;
     margin: 0;
     margin-top: 20px; 
     padding-left: 5px;
-    align-self: center;
+    /* align-self: center; */
 }
 #header span{
     color: var(--color3);

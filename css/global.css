@@ -116,8 +116,25 @@ a:focus{
     background: var(--link-hov-bg);
 }
 
-.btn{display:inline-block;}
-.btn:hover,.btn:focus{}
+
+.btn{
+  display:block;
+  /* display:block; */
+  background: var(--color3);
+  color: var(--color2);
+  padding: 0.3em 1em;
+  border-radius: 5px;
+}
+a.btn{
+  text-decoration: none;
+  margin: 20px auto;
+  width: 150px;
+
+}
+.btn:hover,.btn:focus{
+  background: var(--color4);
+  color: var(--color3);
+}
 
 input,textarea,select{}
 input:hover,textarea:hover,select:hover{}

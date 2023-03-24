@@ -1,0 +1,14 @@
+#Global
+
+#index
+Make a button : our events 
+How it works : create black cards white texts
+
+#events
+Add join button on the events cards : href: meetups link
+
+#about
+
+
+#contact
+
