@@ -146,26 +146,42 @@ article{
 }
 .heroIntroContent p{
     text-align: center;
-   
+}
+.heroIntroContent span{
+    color: var(--color3);
 }
 
 
+.languages{
+    margin-top: 80px;
+    padding: 40px;
+    background: var(--color3);
+}
 
-#hero ul{
+.languages h3{
+    color: var(--color1);
+    text-align: center;
+    margin-bottom: 30px;
+}
+.languages p{
+    color: var(--color2);
+}
+
+.languages ul{
     list-style-type: none;
     padding: 0;
     justify-content: space-evenly;
 }
-#hero ul>li{
+.languages ul>li{
     width: 4em;
 }
-#hero li>img{
+.languages li>img{
     display: block;
     width: 70%;
     height: auto;
     margin: 0 auto;
 }
-#hero li>p{
+.languages li>p{
     margin: 0;
     padding: 0;
     margin-top: 5px;

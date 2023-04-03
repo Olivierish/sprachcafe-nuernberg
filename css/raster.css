@@ -336,5 +336,7 @@
   [class*="col-"] {
     --col: 100%;
   }
-
+  article#hero {
+    margin-bottom: 250px;
+}
 }
